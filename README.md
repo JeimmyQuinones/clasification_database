@@ -50,3 +50,29 @@ La aplicación proporciona una solución dinámica para la clasificación de dat
 1. **Integración de DLP**: Se podría considerar la implementación de análisis de datos utilizando tecnologías DLP para mejorar la precisión en la clasificación de columnas y tablas.
 2. **Ampliación de Alias**: Ampliar la lista de alias y clasificaciones para cubrir un rango más amplio de tipos de información, guiado por las buenas prácticas y directrices documentadas de la empresa.
 
+
+# Instrucciones para ejecutar la aplicación
+## 1. Configurar el archivo `.env`
+- Copia el archivo `example.env` y renómbralo como `.env`.
+
+## 2. Ejecutar los siguientes comandos Docker
+
+- Ejecuta el siguiente comando para construir y levantar los contenedores de Docker:
+  docker compose up --build
+
+## 2. Acceder a la base de datos de prueba
+- La base de datos de prueba está expuesta localmente en el puerto 3308. 
+- Puedes acceder con las siguientes credenciales:
+  Usuario: root
+  Contraseña: 123456789101223
+- Ejecuta el script init_prueba.sql, ubicado en la carpeta scripts, para inicializar la base de datos.
+
+## 3. Probar el endpoint /database/save
+- Para probar este endpoint, utiliza los siguientes parámetros de conexión en la solicitud:
+{
+  "host": "dbPrueba",
+  "port": 3306,
+  "username": "root",
+  "password": "123456789101223"
+}
+
