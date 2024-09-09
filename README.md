@@ -67,8 +67,9 @@ La aplicación proporciona una solución dinámica para la clasificación de dat
   Contraseña: 123456789101223
 - Ejecuta el script init_prueba.sql, ubicado en la carpeta scripts, para inicializar la base de datos.
 
-## 3. Probar el endpoint /database/save
-- Para probar este endpoint, utiliza los siguientes parámetros de conexión en la solicitud:
+## 3. Probar los diferentes endpontis:
+- Url swagger http://localhost:8000/docs# 
+- Para probar el endpoint con la base de datos que envio /database/save, utiliza los siguientes parámetros de conexión en la solicitud:
 {
   "host": "dbPrueba",
   "port": 3306,
